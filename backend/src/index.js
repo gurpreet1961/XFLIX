@@ -3,7 +3,7 @@ const config = require("./config/config");
 const app = require("./app");
 
 let server;
-const port = config.port || 8082;
+const port = config.port || 4000;
 const URL = config.mongoose.url || "mongodb://127.0.0.1:27017/xflix";
 mongoose.connect(URL).then(() => {
   console.log("Connected to MongoDB");
